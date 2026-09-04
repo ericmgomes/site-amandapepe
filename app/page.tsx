@@ -26,7 +26,7 @@ const links = [
   },
   {
     label: 'Contato da família',
-    href: 'mailto:oi@amandamaria.com.br',
+    href: 'mailto:oi@amandapepe.com.br',
     icon: Mail,
   },
 ];
@@ -50,7 +50,7 @@ export default function Home() {
             <div className="flex flex-wrap items-center gap-3 text-sm font-bold text-primary">
               <span className="flex items-center gap-2">
                 <Sparkles className="h-4 w-4" aria-hidden="true" />
-                amandamaria.com.br
+                amandapepe.com.br
               </span>
               <span className="h-1.5 w-1.5 rounded-full bg-[#f3b13e]" />
               <span className="flex items-center gap-2 text-[#227f8f]">
@@ -73,7 +73,7 @@ export default function Home() {
               </p>
             </div>
 
-            <nav aria-label="Links da Amanda Maria" className="space-y-3">
+            <nav aria-label="Links da Amanda Maria Pepe" className="space-y-3">
               {links.map((link) => {
                 const Icon = link.icon;
 
