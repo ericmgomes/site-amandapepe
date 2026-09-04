@@ -58,7 +58,7 @@ export default function Home() {
 
       <section
         aria-label="Bio da Amanda Pepe"
-        className={`relative flex min-h-[min(720px,calc(100vh-64px))] w-full max-w-[440px] flex-col items-center gap-8 overflow-hidden rounded-[28px] border p-5 pt-8 shadow-[0_34px_110px_rgba(18,16,18,0.32)] backdrop-blur-md transition duration-500 sm:p-6 sm:pt-8 ${
+        className={`relative flex min-h-[min(720px,calc(100vh-64px))] w-full max-w-[440px] flex-col items-center justify-center gap-10 overflow-hidden rounded-[28px] border p-5 shadow-[0_34px_110px_rgba(18,16,18,0.32)] backdrop-blur-md transition duration-500 sm:p-6 ${
           isNight
             ? 'border-white/20 bg-[#14151f]/42'
             : 'border-white/65 bg-white/26'
@@ -122,7 +122,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative w-full space-y-5 text-center">
+        <div className="relative w-full space-y-10 text-center">
           <div className="space-y-3">
             <p className="text-sm font-black uppercase tracking-[0.16em] text-[#ffd86a] drop-shadow">
               14 anos · São Paulo
