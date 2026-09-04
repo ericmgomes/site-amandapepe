@@ -64,7 +64,7 @@ export default function Home() {
                 14 anos
               </p>
               <h1 className="text-balance text-5xl font-black leading-[0.96] text-[#2f2a2a] sm:text-6xl">
-                Amanda Maria Pepe
+                Amanda Pepe
               </h1>
               <p className="text-pretty text-lg leading-8 text-[#5d5350]">
                 Uma bio para reunir o que combina com ela agora: fotos, música,
@@ -73,7 +73,7 @@ export default function Home() {
               </p>
             </div>
 
-            <nav aria-label="Links da Amanda Maria Pepe" className="space-y-3">
+            <nav aria-label="Links da Amanda Pepe" className="space-y-3">
               {links.map((link) => {
                 const Icon = link.icon;
 

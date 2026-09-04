@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Amanda Maria Pepe',
+  title: 'Amanda Pepe',
   description:
-    'Bio da Amanda Maria Pepe, 14 anos, São Paulo, com fotos, música e momentos especiais.',
+    'Bio da Amanda Pepe, 14 anos, São Paulo, com fotos, música e momentos especiais.',
 };
 
 export default function RootLayout({
