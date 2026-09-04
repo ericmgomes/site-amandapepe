@@ -14,7 +14,7 @@ import {
 const links = [
   {
     label: 'Perfis do Instagram',
-    href: 'https://instagram.com/',
+    href: 'https://www.instagram.com/mandpepe/',
     icon: AtSign,
   },
   {
@@ -29,7 +29,7 @@ const links = [
   },
   {
     label: 'WhatsApp',
-    href: 'https://wa.me/5500000000000',
+    href: 'https://wa.me/5511940013816',
     icon: MessageCircle,
   },
 ];
