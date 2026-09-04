@@ -143,13 +143,17 @@ export default function Home() {
             </p>
           </div>
 
-          <nav aria-label="Links da Amanda Pepe" className="grid gap-3">
+          <nav
+            aria-label="Links da Amanda Pepe"
+            className="grid grid-cols-4 gap-3"
+          >
             {links.map((link) => {
               const Icon = link.icon;
 
               return (
                 <a
-                  className={`group flex min-h-14 items-center justify-between rounded-2xl border px-4 text-base font-black shadow-sm backdrop-blur transition hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white ${
+                  aria-label={link.label}
+                  className={`group grid aspect-square min-h-16 place-items-center rounded-full border shadow-sm backdrop-blur transition hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white ${
                     isNight
                       ? 'border-white/20 bg-white/16 text-white hover:bg-white/24'
                       : 'border-white/65 bg-white/76 text-[#2f2a2a] hover:bg-white/90'
@@ -159,19 +163,16 @@ export default function Home() {
                   rel="noreferrer"
                   target="_blank"
                 >
-                  <span className="flex items-center gap-3">
-                    <span
-                      className={`grid h-10 w-10 place-items-center rounded-full transition ${
-                        isNight
-                          ? 'bg-white/16 text-[#ffd86a] group-hover:bg-white group-hover:text-[#1b2554]'
-                          : 'bg-[#ffe1d7] text-primary group-hover:bg-primary group-hover:text-primary-foreground'
-                      }`}
-                    >
-                      <Icon className="h-5 w-5" aria-hidden="true" />
-                    </span>
-                    {link.label}
+                  <span
+                    className={`grid h-11 w-11 place-items-center rounded-full transition ${
+                      isNight
+                        ? 'bg-white/16 text-[#ffd86a] group-hover:bg-white group-hover:text-[#1b2554]'
+                        : 'bg-[#ffe1d7] text-primary group-hover:bg-primary group-hover:text-primary-foreground'
+                    }`}
+                  >
+                    <Icon className="h-5 w-5" aria-hidden="true" />
                   </span>
-                  <span aria-hidden="true">→</span>
+                  <span className="sr-only">{link.label}</span>
                 </a>
               );
             })}
