@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import {
   AtSign,
-  Camera,
   MessageCircle,
   Moon,
   Music,
@@ -19,13 +18,8 @@ const links = [
   },
   {
     label: 'Playlists Spotify',
-    href: 'https://open.spotify.com/',
+    href: 'https://open.spotify.com/user/6iv92f1rcky9mpx3si5n3shcd?si=9245e0590bd84c7d',
     icon: Music,
-  },
-  {
-    label: 'Álbuns de fotos',
-    href: 'https://photos.google.com/',
-    icon: Camera,
   },
   {
     label: 'WhatsApp',
@@ -147,7 +141,7 @@ export default function Home() {
         <div className="relative grid w-full flex-1 place-items-center">
           <nav
             aria-label="Links da Amanda Pepe"
-            className="mx-auto grid max-w-[320px] grid-cols-4 gap-3"
+            className="mx-auto grid max-w-[240px] grid-cols-3 gap-3"
           >
             {links.map((link) => {
               const Icon = link.icon;
