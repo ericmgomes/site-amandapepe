@@ -58,7 +58,7 @@ export default function Home() {
 
       <section
         aria-label="Bio da Amanda Pepe"
-        className={`relative flex min-h-[min(720px,calc(100vh-64px))] w-full max-w-[440px] flex-col justify-between overflow-hidden rounded-[28px] border p-5 shadow-[0_34px_110px_rgba(18,16,18,0.32)] backdrop-blur-md transition duration-500 sm:p-6 ${
+        className={`relative flex min-h-[min(720px,calc(100vh-64px))] w-full max-w-[440px] flex-col items-center gap-8 overflow-hidden rounded-[28px] border p-5 pt-8 shadow-[0_34px_110px_rgba(18,16,18,0.32)] backdrop-blur-md transition duration-500 sm:p-6 sm:pt-8 ${
           isNight
             ? 'border-white/20 bg-[#14151f]/42'
             : 'border-white/65 bg-white/26'
@@ -72,7 +72,7 @@ export default function Home() {
           }`}
         />
 
-        <div className="relative flex items-start justify-between gap-3">
+        <div className="relative flex w-full items-start justify-between gap-3">
           <div
             className={`inline-flex items-center gap-2 rounded-full border px-3 py-2 text-sm font-extrabold shadow-sm backdrop-blur ${
               isNight
@@ -122,7 +122,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative space-y-5">
+        <div className="relative w-full space-y-5 text-center">
           <div className="space-y-3">
             <p className="text-sm font-black uppercase tracking-[0.16em] text-[#ffd86a] drop-shadow">
               14 anos · São Paulo
@@ -145,7 +145,7 @@ export default function Home() {
 
           <nav
             aria-label="Links da Amanda Pepe"
-            className="grid grid-cols-4 gap-3"
+            className="mx-auto grid max-w-[320px] grid-cols-4 gap-3"
           >
             {links.map((link) => {
               const Icon = link.icon;
