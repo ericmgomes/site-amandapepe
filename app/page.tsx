@@ -94,7 +94,7 @@ export default function Home() {
         className={`absolute inset-0 h-full w-full object-cover transition duration-500 ${
           isNight ? 'scale-105 brightness-[0.42] saturate-[0.78]' : 'brightness-100'
         }`}
-        src="/amanda-sp-collage.png"
+        src="/amanda-sp-collage.webp"
       />
       <div
         className={`absolute inset-0 transition duration-500 ${
