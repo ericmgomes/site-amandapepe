@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Baloo_2, Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 
 const geistSans = Geist({
@@ -12,10 +12,16 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
+const baloo = Baloo_2({
+  variable: '--font-baloo',
+  subsets: ['latin'],
+  weight: ['600', '700'],
+});
+
 export const metadata: Metadata = {
   title: 'Amanda Pepe',
   description:
-    'Bio da Amanda Pepe, 14 anos, São Paulo, com fotos, música e momentos especiais.',
+    'Bio da Amanda Pepe, desde 2012, São Paulo, com música e momentos especiais.',
 };
 
 export default function RootLayout({
@@ -26,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${baloo.variable} antialiased`}
       >
         {children}
       </body>
